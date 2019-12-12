@@ -570,10 +570,13 @@ License: You must have a valid license purchased only from themeforest(the above
 								id="m_aside_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
 							<div id="m_header_menu"
 								class="m-header-menu m-aside-header-menu-mobile m-aside-header-menu-mobile--offcanvas  m-header-menu--skin-dark m-header-menu--submenu-skin-light m-aside-header-menu-mobile--skin-light m-aside-header-menu-mobile--submenu-skin-light ">
-								<ul class="m-menu__nav  m-menu__nav--submenu-arrow ">
+								<ul class="m-menu__nav  m-menu__nav--submenu-arrow nav nav-tabs " id="nav-tab"
+									role="tablist">
 									<li class="m-menu__item  m-menu__item--active  m-menu__item--active-tab  m-menu__item--submenu m-menu__item--tabs"
-										m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="index.html"
-											class="m-menu__link m-menu__toggle"><span
+										m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="#dashboard"
+											data-toggle="tab" id="DashboardNav" data-toggle="tab" role="tab"
+											class="m-menu__link m-menu__toggle active"
+											aria-controls="dashboard" aria-selected="true"><span
 												class="m-menu__link-text">Dashboard</span><i
 												class="m-menu__hor-arrow la la-angle-down"></i><i
 												class="m-menu__ver-arrow la la-angle-right"></i></a>
@@ -1197,8 +1200,10 @@ License: You must have a valid license purchased only from themeforest(the above
 										</div>
 									</li>
 									<li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"
-										m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="javascript:;"
-											class="m-menu__link m-menu__toggle" title="Non functional dummy link"><span
+										m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="#systemManagment"
+											data-toggle="tab" id="systemManagmentNav" data-toggle="tab" role="tab"
+											class="m-menu__link m-menu__toggle"
+											aria-controls="systemManagment" aria-selected="false"><span
 												class="m-menu__link-text">system Management</span><i
 												class="m-menu__hor-arrow la la-angle-down"></i><i
 												class="m-menu__ver-arrow la la-angle-right"></i></a>
@@ -1238,305 +1243,14 @@ License: You must have a valid license purchased only from themeforest(the above
 													</div>
 												</li>
 											</ul>
-											<!---------------------->
-											<div class="m-portlet m-portlet--mobile">
-												<div class="m-portlet__head">
-													<div class="m-portlet__head-caption">
-														<div class="m-portlet__head-title">
-															<h3 class="m-portlet__head-text">
-																Export Tools
-															</h3>
-														</div>
-													</div>
-													<div class="m-portlet__head-tools">
-														<ul class="m-portlet__nav">
-															<li class="m-portlet__nav-item">
-																<a href="#" data-toggle="modal"
-																	data-target="#addAccountModal"
-																	class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air">
-																	<span>
-																		<i class="fa fa-plus"></i>
-																		<span>New Account</span>
-																	</span>
-																</a>
-															</li>
-															<li class="m-portlet__nav-item"></li>
 
-														</ul>
-													</div>
-												</div>
-												<div class="m-portlet__body">
-
-													<!--begin: Datatable -->
-													<table
-														class="table table-striped- table-bordered table-hover table-checkable"
-														id="m_table_1">
-														<thead>
-															<tr>
-																<th>ID</th>
-																<th>name</th>
-																<th>email</th>
-																<th>type</th>
-																<th>level</th>
-																<th>Status</th>
-																<th>action</th>
-															</tr>
-														</thead>
-														<tbody>
-
-															<tr>
-																<td>61715-075</td>
-																<td>China</td>
-																<td>Tieba</td>
-																<td>746 Pine View Junction</td>
-																<td>Gleichner, Ziemann and Gutkowski</td>
-																<td><span
-																		class="m-badge m-badge--success m-badge--wide">active</span>
-																</td>
-																<td><i class=" fa fa-edit" data-toggle="tooltip "
-																	data-placement="bottom" title="view"></i>
-
-																<i class="fa fa-times-circle"
-																	data-placement="bottom" title="delete"></i>
-																<i class="fa fa-circle text-success" data-placement="bottom"
-																	title="active"></i>
-																<i class="fa fa-circle text-danger"  data-placement="bottom"
-																	title="deactive"></i>
-
-															</td>
-															</tr>
-															<tr>
-																<td>63629-4697</td>
-																<td>Indonesia</td>
-																<td>Cihaur</td>
-																<td>01652 Fulton Trail</td>
-																<td>Rosenbaum-Reichel</td>
-																<td><span
-																		class="m-badge m-badge--danger m-badge--wide">deactive</span>
-																</td>
-																<td><i class=" fa fa-edit" data-toggle="tooltip "
-																	data-placement="bottom" title="view"></i>
-
-																<i class="fa fa-times-circle"
-																	data-placement="bottom" title="delete"></i>
-																<i class="fa fa-circle text-success" data-placement="bottom"
-																	title="active"></i>
-																<i class="fa fa-circle text-danger"  data-placement="bottom"
-																	title="deactive"></i>
-
-															</td>
-															</tr>
-															<tr>
-																<td>68084-123</td>
-																<td>Argentina</td>
-																<td>Puerto Iguazú</td>
-																<td>2 Pine View Park</td>
-																<td>Kulas, Cassin and Batz</td>
-																<td>1</td>
-																<td><i class=" fa fa-edit" data-toggle="tooltip "
-																	data-placement="bottom" title="view"></i>
-
-																<i class="fa fa-times-circle"
-																	data-placement="bottom" title="delete"></i>
-																<i class="fa fa-circle text-success" data-placement="bottom"
-																	title="active"></i>
-																<i class="fa fa-circle text-danger"  data-placement="bottom"
-																	title="deactive"></i>
-
-															</td>
-															</tr>
-															<tr>
-																<td>67457-428</td>
-																<td>Indonesia</td>
-																<td>Talok</td>
-																<td>3050 Buell Terrace</td>
-																<td>Pfannerstill-Treutel</td>
-																<td>1</td>
-																<td><i class=" fa fa-edit" data-toggle="tooltip "
-																		data-placement="bottom" title="view"></i>
-
-																	<i class="fa fa-times-circle"
-																		data-placement="bottom" title="delete"></i>
-																	<i class="fa fa-circle text-success"
-																		data-placement="bottom" title="active"></i>
-																	<i class="fa fa-circle text-danger"
-																		data-placement="bottom" title="deactive"></i>
-
-																</td>
-															</tr>
-															<tr>
-																<td>31722-529</td>
-																<td>Austria</td>
-																<td>Sankt Andrä-Höch</td>
-																<td>3038 Trailsway Junction</td>
-																<td>Dicki-Kling</td>
-																<td>2</td>
-																<td><i class=" fa fa-edit" data-toggle="tooltip "
-																		data-placement="bottom" title="view"></i>
-
-																	<i class="fa fa-times-circle"
-																		data-placement="bottom" title="delete"></i>
-																	<i class="fa fa-circle text-success"
-																		data-placement="bottom" title="active"></i>
-																	<i class="fa fa-circle text-danger"
-																		data-placement="bottom" title="deactive"></i>
-
-																</td>
-															</tr>
-															<tr>
-																<td>64117-168</td>
-																<td>China</td>
-																<td>Rongkou</td>
-																<td>023 South Way</td>
-																<td>Gleason, Kub and Marquardt</td>
-																<td>5</td>
-																<td><i class=" fa fa-edit" data-toggle="tooltip "
-																		data-placement="bottom" title="view"></i>
-
-																	<i class="fa fa-times-circle"
-																		data-placement="bottom" title="delete"></i>
-																	<i class="fa fa-circle text-success"
-																		data-placement="bottom" title="active"></i>
-																	<i class="fa fa-circle text-danger"
-																		data-placement="bottom" title="deactive"></i>
-
-																</td>
-															</tr>
-															<tr>
-																<td>43857-0331</td>
-																<td>China</td>
-																<td>Baiguo</td>
-																<td>56482 Fairfield Terrace</td>
-																<td>Jenkins Inc</td>
-																<td>2</td>
-																<td><i class=" fa fa-edit" data-toggle="tooltip "
-																		data-placement="bottom" title="view"></i>
-
-																	<i class="fa fa-times-circle"
-																		data-placement="bottom" title="delete"></i>
-																	<i class="fa fa-circle text-success"
-																		data-placement="bottom" title="active"></i>
-																	<i class="fa fa-circle text-danger"
-																		data-placement="bottom" title="deactive"></i>
-
-																</td>
-															</tr>
-															<tr>
-																<td>64980-196</td>
-																<td>Croatia</td>
-																<td>Vinica</td>
-																<td>0 Elka Street</td>
-																<td>Streich LLC</td>
-																<td>6</td>
-																<td><i class=" fa fa-edit" data-toggle="tooltip "
-																		data-placement="bottom" title="view"></i>
-
-																	<i class="fa fa-times-circle"
-																		data-placement="bottom" title="delete"></i>
-																	<i class="fa fa-circle text-success"
-																		data-placement="bottom" title="active"></i>
-																	<i class="fa fa-circle text-danger"
-																		data-placement="bottom" title="deactive"></i>
-
-																</td>
-															</tr>
-															<tr>
-																<td>0404-0360</td>
-																<td>Colombia</td>
-																<td>San Carlos</td>
-																<td>38099 Ilene Hill</td>
-																<td>Haley, Schamberger and Durgan</td>
-																<td>2</td>
-																<td><i class=" fa fa-edit" data-toggle="tooltip "
-																		data-placement="bottom" title="view"></i>
-
-																	<i class="fa fa-times-circle"
-																		data-placement="bottom" title="delete"></i>
-																	<i class="fa fa-circle text-success"
-																		data-placement="bottom" title="active"></i>
-																	<i class="fa fa-circle text-danger"
-																		data-placement="bottom" title="deactive"></i>
-
-																</td>
-															</tr>
-															<tr>
-																<td>52125-267</td>
-																<td>Thailand</td>
-																<td>Maha Sarakham</td>
-																<td>8696 Barby Pass</td>
-																<td>Labadie, Predovic and Hammes</td>
-																<td>1</td>
-																<td><i class=" fa fa-edit" data-toggle="tooltip "
-																		data-placement="bottom" title="view"></i>
-
-																	<i class="fa fa-times-circle"
-																		data-placement="bottom" title="delete"></i>
-																	<i class="fa fa-circle text-success"
-																		data-placement="bottom" title="active"></i>
-																	<i class="fa fa-circle text-danger"
-																		data-placement="bottom" title="deactive"></i>
-
-																</td>
-															</tr>
-															<tr>
-																<td>54092-515</td>
-																<td>Brazil</td>
-																<td>Canguaretama</td>
-																<td>32461 Ridgeway Alley</td>
-																<td>Treutel-Ratke</td>
-																<td>4</td>
-																<td><i class=" fa fa-edit" data-toggle="tooltip "
-																		data-placement="bottom" title="view"></i>
-
-																	<i class="fa fa-times-circle"
-																		data-placement="bottom" title="delete"></i>
-																	<i class="fa fa-circle text-success"
-																		data-placement="bottom" title="active"></i>
-																	<i class="fa fa-circle text-danger"
-																		data-placement="bottom" title="deactive"></i>
-
-																</td>
-															</tr>
-															<tr>
-																<td>0185-0130</td>
-																<td>China</td>
-																<td>Jiamachi</td>
-																<td>23 Walton Pass</td>
-																<td>Strosin, Nitzsche and Wisozk</td>
-																<td>3</td>
-																<td><i class=" fa fa-edit" data-toggle="tooltip "
-																		data-placement="bottom" title="view"></i>
-
-																	<i class="fa fa-times-circle"
-																		data-placement="bottom" title="delete"></i>
-																	<i class="fa fa-circle text-success"
-																		data-placement="bottom" title="active"></i>
-																	<i class="fa fa-circle text-danger"
-																		data-placement="bottom" title="deactive"></i>
-
-																</td>
-															</tr>
-														</tbody>
-														<tfoot>
-															<tr>
-																<th>ID</th>
-																<th>name</th>
-																<th>email</th>
-																<th>type</th>
-																<th>level</th>
-																<th>Status</th>
-																<th>actions</th>
-															</tr>
-														</tfoot>
-													</table>
-												</div>
-											</div>
-											<!---------------------------------------------------->
 										</div>
 									</li>
 									<li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"
 										m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="javascript:;"
-											class="m-menu__link m-menu__toggle" title="Non functional dummy link"><span
+										data-toggle="tab" id="TeamNav" data-toggle="tab" role="tab"
+										class="m-menu__link m-menu__toggle"
+										aria-controls="systemManagment" aria-selected="false"><span
 												class="m-menu__link-text">Team</span><i
 												class="m-menu__hor-arrow la la-angle-down"></i><i
 												class="m-menu__ver-arrow la la-angle-right"></i></a>
@@ -1591,7 +1305,9 @@ License: You must have a valid license purchased only from themeforest(the above
 									</li>
 									<li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"
 										m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="javascript:;"
-											class="m-menu__link m-menu__toggle" title="Non functional dummy link"><span
+										data-toggle="tab" id="leaguesNav" data-toggle="tab" role="tab"
+										class="m-menu__link m-menu__toggle"
+										aria-controls="systemManagment" aria-selected="false"><span
 												class="m-menu__link-text">leagues</span><i
 												class="m-menu__hor-arrow la la-angle-down"></i><i
 												class="m-menu__ver-arrow la la-angle-right"></i></a>
@@ -1624,7 +1340,9 @@ License: You must have a valid license purchased only from themeforest(the above
 									</li>
 									<li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"
 										m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="javascript:;"
-											class="m-menu__link m-menu__toggle" title="Non functional dummy link"><span
+										data-toggle="tab" id="postNav" data-toggle="tab" role="tab"
+										class="m-menu__link m-menu__toggle"
+										aria-controls="systemManagment" aria-selected="false"><span
 												class="m-menu__link-text">POST</span><i
 												class="m-menu__hor-arrow la la-angle-down"></i><i
 												class="m-menu__ver-arrow la la-angle-right"></i></a>
@@ -1653,7 +1371,9 @@ License: You must have a valid license purchased only from themeforest(the above
 									</li>
 									<li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"
 										m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="javascript:;"
-											class="m-menu__link m-menu__toggle" title="Non functional dummy link"><span
+										data-toggle="tab" id="SettingsNav" data-toggle="tab" role="tab"
+										class="m-menu__link m-menu__toggle"
+										aria-controls="systemManagment" aria-selected="false"><span
 												class="m-menu__link-text">Settings</span><i
 												class="m-menu__hor-arrow la la-angle-down"></i><i
 												class="m-menu__ver-arrow la la-angle-right"></i></a>
@@ -1693,9 +1413,10 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!-- end::Header -->
 
 		<!-- begin::Body -->
-		<div
-			class="m-grid__item m-grid__item--fluid  m-grid m-grid--ver-desktop m-grid--desktop m-page__container m-body">
-			<div class="m-grid__item m-grid__item--fluid m-wrapper">
+		<div class="m-grid__item m-grid__item--fluid  m-grid m-grid--ver-desktop m-grid--desktop m-page__container m-body tab-content"
+			id="nav-tabContent">
+			<div class="m-grid__item m-grid__item--fluid m-wrapper tab-pane fade show active" id="dashboard"
+				role="tabpanel" aria-labelledby="DashboardNav">
 
 				<!-- BEGIN: Subheader -->
 				<div class="m-subheader ">
@@ -1706,6 +1427,8 @@ License: You must have a valid license purchased only from themeforest(the above
 						<div>
 							<span class="m-subheader__daterange" id="m_dashboard_daterangepicker">
 								<span class="m-subheader__daterange-label">
+
+
 									<span class="m-subheader__daterange-title"></span>
 									<span class="m-subheader__daterange-date m--font-brand"></span>
 								</span>
@@ -3887,6 +3610,260 @@ License: You must have a valid license purchased only from themeforest(the above
 					<!--End::Section-->
 				</div>
 			</div>
+			<!---------------------->
+			<div class="m-portlet m-portlet--mobile tab-pane  m-wrapper fade" id="systemManagment"
+			role="tabpanel" aria-labelledby="systemManagmentNav">
+				<div class="m-portlet__head">
+					<div class="m-portlet__head-caption">
+						<div class="m-portlet__head-title">
+							<h3 class="m-portlet__head-text">
+								Export Tools
+							</h3>
+						</div>
+					</div>
+					<div class="m-portlet__head-tools">
+						<ul class="m-portlet__nav">
+							<li class="m-portlet__nav-item">
+								<a href="#" data-toggle="modal" data-target="#addAccountModal"
+									class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air">
+									<span>
+										<i class="fa fa-plus"></i>
+										<span>New Account</span>
+									</span>
+								</a>
+							</li>
+							<li class="m-portlet__nav-item"></li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="m-portlet__body">
+
+					<!--begin: Datatable -->
+					<table class="table table-striped- table-bordered table-hover table-checkable" id="m_table_1">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>name</th>
+								<th>email</th>
+								<th>type</th>
+								<th>level</th>
+								<th>Status</th>
+								<th>action</th>
+							</tr>
+						</thead>
+						<tbody>
+
+							<tr>
+								<td>61715-075</td>
+								<td>China</td>
+								<td>Tieba</td>
+								<td>746 Pine View Junction</td>
+								<td>Gleichner, Ziemann and Gutkowski</td>
+								<td><span class="m-badge m-badge--success m-badge--wide">active</span>
+								</td>
+								<td><i class=" fa fa-edit" data-toggle="tooltip " data-placement="bottom"
+										title="view"></i>
+
+									<i class="fa fa-times-circle" data-placement="bottom" title="delete"></i>
+									<i class="fa fa-circle text-success" data-placement="bottom" title="active"></i>
+									<i class="fa fa-circle text-danger" data-placement="bottom" title="deactive"></i>
+
+								</td>
+							</tr>
+							<tr>
+								<td>63629-4697</td>
+								<td>Indonesia</td>
+								<td>Cihaur</td>
+								<td>01652 Fulton Trail</td>
+								<td>Rosenbaum-Reichel</td>
+								<td><span class="m-badge m-badge--danger m-badge--wide">deactive</span>
+								</td>
+								<td><i class=" fa fa-edit" data-toggle="tooltip " data-placement="bottom"
+										title="view"></i>
+
+									<i class="fa fa-times-circle" data-placement="bottom" title="delete"></i>
+									<i class="fa fa-circle text-success" data-placement="bottom" title="active"></i>
+									<i class="fa fa-circle text-danger" data-placement="bottom" title="deactive"></i>
+
+								</td>
+							</tr>
+							<tr>
+								<td>68084-123</td>
+								<td>Argentina</td>
+								<td>Puerto Iguazú</td>
+								<td>2 Pine View Park</td>
+								<td>Kulas, Cassin and Batz</td>
+								<td>1</td>
+								<td><i class=" fa fa-edit" data-toggle="tooltip " data-placement="bottom"
+										title="view"></i>
+
+									<i class="fa fa-times-circle" data-placement="bottom" title="delete"></i>
+									<i class="fa fa-circle text-success" data-placement="bottom" title="active"></i>
+									<i class="fa fa-circle text-danger" data-placement="bottom" title="deactive"></i>
+
+								</td>
+							</tr>
+							<tr>
+								<td>67457-428</td>
+								<td>Indonesia</td>
+								<td>Talok</td>
+								<td>3050 Buell Terrace</td>
+								<td>Pfannerstill-Treutel</td>
+								<td>1</td>
+								<td><i class=" fa fa-edit" data-toggle="tooltip " data-placement="bottom"
+										title="view"></i>
+
+									<i class="fa fa-times-circle" data-placement="bottom" title="delete"></i>
+									<i class="fa fa-circle text-success" data-placement="bottom" title="active"></i>
+									<i class="fa fa-circle text-danger" data-placement="bottom" title="deactive"></i>
+
+								</td>
+							</tr>
+							<tr>
+								<td>31722-529</td>
+								<td>Austria</td>
+								<td>Sankt Andrä-Höch</td>
+								<td>3038 Trailsway Junction</td>
+								<td>Dicki-Kling</td>
+								<td>2</td>
+								<td><i class=" fa fa-edit" data-toggle="tooltip " data-placement="bottom"
+										title="view"></i>
+
+									<i class="fa fa-times-circle" data-placement="bottom" title="delete"></i>
+									<i class="fa fa-circle text-success" data-placement="bottom" title="active"></i>
+									<i class="fa fa-circle text-danger" data-placement="bottom" title="deactive"></i>
+
+								</td>
+							</tr>
+							<tr>
+								<td>64117-168</td>
+								<td>China</td>
+								<td>Rongkou</td>
+								<td>023 South Way</td>
+								<td>Gleason, Kub and Marquardt</td>
+								<td>5</td>
+								<td><i class=" fa fa-edit" data-toggle="tooltip " data-placement="bottom"
+										title="view"></i>
+
+									<i class="fa fa-times-circle" data-placement="bottom" title="delete"></i>
+									<i class="fa fa-circle text-success" data-placement="bottom" title="active"></i>
+									<i class="fa fa-circle text-danger" data-placement="bottom" title="deactive"></i>
+
+								</td>
+							</tr>
+							<tr>
+								<td>43857-0331</td>
+								<td>China</td>
+								<td>Baiguo</td>
+								<td>56482 Fairfield Terrace</td>
+								<td>Jenkins Inc</td>
+								<td>2</td>
+								<td><i class=" fa fa-edit" data-toggle="tooltip " data-placement="bottom"
+										title="view"></i>
+
+									<i class="fa fa-times-circle" data-placement="bottom" title="delete"></i>
+									<i class="fa fa-circle text-success" data-placement="bottom" title="active"></i>
+									<i class="fa fa-circle text-danger" data-placement="bottom" title="deactive"></i>
+
+								</td>
+							</tr>
+							<tr>
+								<td>64980-196</td>
+								<td>Croatia</td>
+								<td>Vinica</td>
+								<td>0 Elka Street</td>
+								<td>Streich LLC</td>
+								<td>6</td>
+								<td><i class=" fa fa-edit" data-toggle="tooltip " data-placement="bottom"
+										title="view"></i>
+
+									<i class="fa fa-times-circle" data-placement="bottom" title="delete"></i>
+									<i class="fa fa-circle text-success" data-placement="bottom" title="active"></i>
+									<i class="fa fa-circle text-danger" data-placement="bottom" title="deactive"></i>
+
+								</td>
+							</tr>
+							<tr>
+								<td>0404-0360</td>
+								<td>Colombia</td>
+								<td>San Carlos</td>
+								<td>38099 Ilene Hill</td>
+								<td>Haley, Schamberger and Durgan</td>
+								<td>2</td>
+								<td><i class=" fa fa-edit" data-toggle="tooltip " data-placement="bottom"
+										title="view"></i>
+
+									<i class="fa fa-times-circle" data-placement="bottom" title="delete"></i>
+									<i class="fa fa-circle text-success" data-placement="bottom" title="active"></i>
+									<i class="fa fa-circle text-danger" data-placement="bottom" title="deactive"></i>
+
+								</td>
+							</tr>
+							<tr>
+								<td>52125-267</td>
+								<td>Thailand</td>
+								<td>Maha Sarakham</td>
+								<td>8696 Barby Pass</td>
+								<td>Labadie, Predovic and Hammes</td>
+								<td>1</td>
+								<td><i class=" fa fa-edit" data-toggle="tooltip " data-placement="bottom"
+										title="view"></i>
+
+									<i class="fa fa-times-circle" data-placement="bottom" title="delete"></i>
+									<i class="fa fa-circle text-success" data-placement="bottom" title="active"></i>
+									<i class="fa fa-circle text-danger" data-placement="bottom" title="deactive"></i>
+
+								</td>
+							</tr>
+							<tr>
+								<td>54092-515</td>
+								<td>Brazil</td>
+								<td>Canguaretama</td>
+								<td>32461 Ridgeway Alley</td>
+								<td>Treutel-Ratke</td>
+								<td>4</td>
+								<td><i class=" fa fa-edit" data-toggle="tooltip " data-placement="bottom"
+										title="view"></i>
+
+									<i class="fa fa-times-circle" data-placement="bottom" title="delete"></i>
+									<i class="fa fa-circle text-success" data-placement="bottom" title="active"></i>
+									<i class="fa fa-circle text-danger" data-placement="bottom" title="deactive"></i>
+
+								</td>
+							</tr>
+							<tr>
+								<td>0185-0130</td>
+								<td>China</td>
+								<td>Jiamachi</td>
+								<td>23 Walton Pass</td>
+								<td>Strosin, Nitzsche and Wisozk</td>
+								<td>3</td>
+								<td><i class=" fa fa-edit" data-toggle="tooltip " data-placement="bottom"
+										title="view"></i>
+
+									<i class="fa fa-times-circle" data-placement="bottom" title="delete"></i>
+									<i class="fa fa-circle text-success" data-placement="bottom" title="active"></i>
+									<i class="fa fa-circle text-danger" data-placement="bottom" title="deactive"></i>
+
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th>ID</th>
+								<th>name</th>
+								<th>email</th>
+								<th>type</th>
+								<th>level</th>
+								<th>Status</th>
+								<th>actions</th>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+			<!---------------------------------------------------->
 		</div>
 		<!-- end::Body -->
 		<!-- begin::Footer -->
