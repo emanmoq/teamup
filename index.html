@@ -62,7 +62,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 <!-- begin::Body -->
 
-<body style="background-image: url(assets/app/media/img/bg/bg-7.jpg)"
+<body style="background-image: url(assets/app/media/img/bg/bg-7.png)"
 	class="m-page--fluid m-page--loading-enabled m-page--loading m-header--fixed m-header--fixed-mobile m-footer--push m-aside--offcanvas-default">
 
 	<!-- begin::Page loader -->
@@ -92,9 +92,9 @@ License: You must have a valid license purchased only from themeforest(the above
 							<div class="m-stack m-stack--ver m-stack--general m-stack--inline">
 								<div class="m-stack__item m-stack__item--middle m-brand__logo">
 									<a href="index.html" class="m-brand__logo-wrapper">
-										<img alt="" src="assets/demo/demo8/media/img/logo/logo.png"
+										<img alt="" src="assets/demo/demo8/media/img/logo/logo.svg"
 											class="m-brand__logo-default" />
-										<img alt="" src="assets/demo/demo8/media/img/logo/logo_inverse.png"
+										<img alt="" src="assets/demo/demo8/media/img/logo/logo.svg"
 											class="m-brand__logo-inverse" />
 									</a>
 								</div>
@@ -575,9 +575,8 @@ License: You must have a valid license purchased only from themeforest(the above
 									<li class="m-menu__item  m-menu__item--active  m-menu__item--active-tab  m-menu__item--submenu m-menu__item--tabs"
 										m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="#dashboard"
 											data-toggle="tab" id="DashboardNav" data-toggle="tab" role="tab"
-											class="m-menu__link m-menu__toggle active"
-											aria-controls="dashboard" aria-selected="true"><span
-												class="m-menu__link-text">Dashboard</span><i
+											class="m-menu__link m-menu__toggle active" aria-controls="dashboard"
+											aria-selected="true"><span class="m-menu__link-text">Dashboard</span><i
 												class="m-menu__hor-arrow la la-angle-down"></i><i
 												class="m-menu__ver-arrow la la-angle-right"></i></a>
 										<div
@@ -1202,9 +1201,54 @@ License: You must have a valid license purchased only from themeforest(the above
 									<li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"
 										m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="#systemManagment"
 											data-toggle="tab" id="systemManagmentNav" data-toggle="tab" role="tab"
-											class="m-menu__link m-menu__toggle"
-											aria-controls="systemManagment" aria-selected="false"><span
-												class="m-menu__link-text">system Management</span><i
+											class="m-menu__link m-menu__toggle" aria-controls="systemManagment"
+											aria-selected="false"><span class="m-menu__link-text">system
+												Management</span><i class="m-menu__hor-arrow la la-angle-down"></i><i
+												class="m-menu__ver-arrow la la-angle-right"></i></a>
+										<div
+											class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--tabs">
+											<span class="m-menu__arrow m-menu__arrow--adjust"></span>
+											<ul class="m-menu__subnav">
+												<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true">
+													<a href="builder.html" class="m-menu__link "><i
+															class="m-menu__link-icon flaticon-graphic-2"></i><span
+															class="m-menu__link-text">Revenue</span></a></li>
+												<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true">
+													<a href="builder.html" class="m-menu__link "><i
+															class="m-menu__link-icon flaticon-analytics"></i><span
+															class="m-menu__link-text">Bills</span></a></li>
+												<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true">
+													<a href="builder.html" class="m-menu__link "><i
+															class="m-menu__link-icon flaticon-notes"></i><span
+															class="m-menu__link-text">IPO</span></a></li>
+												<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true">
+													<a href="builder.html" class="m-menu__link "><i
+															class="m-menu__link-icon flaticon-clipboard"></i><span
+															class="m-menu__link-text">Tax Management</span></a></li>
+												<li class="m-menu__item " m-menu-link-redirect="1" aria-haspopup="true">
+													<a href="builder.html" class="m-menu__link "><i
+															class="m-menu__link-icon flaticon-alarm-1"></i><span
+															class="m-menu__link-text">Invoices</span></a></li>
+												<li class="m-menu__item  m-menu__item--actions" aria-haspopup="true">
+													<div class="m-menu__link m-menu__link--toggle-skip">
+														<a href="#"
+															class="btn btn-danger m-btn m-btn--icon m-btn--pill">
+															<span>
+																<i class="la la-cloud-download"></i>
+																<span>Generate report</span>
+															</span>
+														</a>
+													</div>
+												</li>
+											</ul>
+
+										</div>
+									</li>
+									<li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"
+										m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="#users"
+											data-toggle="tab" id="UsersNavs" data-toggle="tab" role="tab"
+											class="m-menu__link m-menu__toggle" aria-controls="users"
+											aria-selected="false"><span class="m-menu__link-text">Users</span><i
 												class="m-menu__hor-arrow la la-angle-down"></i><i
 												class="m-menu__ver-arrow la la-angle-right"></i></a>
 										<div
@@ -1248,10 +1292,9 @@ License: You must have a valid license purchased only from themeforest(the above
 									</li>
 									<li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"
 										m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="javascript:;"
-										data-toggle="tab" id="TeamNav" data-toggle="tab" role="tab"
-										class="m-menu__link m-menu__toggle"
-										aria-controls="systemManagment" aria-selected="false"><span
-												class="m-menu__link-text">Team</span><i
+											data-toggle="tab" id="TeamNav" data-toggle="tab" role="tab"
+											class="m-menu__link m-menu__toggle" aria-controls="systemManagment"
+											aria-selected="false"><span class="m-menu__link-text">Team</span><i
 												class="m-menu__hor-arrow la la-angle-down"></i><i
 												class="m-menu__ver-arrow la la-angle-right"></i></a>
 										<div
@@ -1305,10 +1348,9 @@ License: You must have a valid license purchased only from themeforest(the above
 									</li>
 									<li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"
 										m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="javascript:;"
-										data-toggle="tab" id="leaguesNav" data-toggle="tab" role="tab"
-										class="m-menu__link m-menu__toggle"
-										aria-controls="systemManagment" aria-selected="false"><span
-												class="m-menu__link-text">leagues</span><i
+											data-toggle="tab" id="leaguesNav" data-toggle="tab" role="tab"
+											class="m-menu__link m-menu__toggle" aria-controls="systemManagment"
+											aria-selected="false"><span class="m-menu__link-text">leagues</span><i
 												class="m-menu__hor-arrow la la-angle-down"></i><i
 												class="m-menu__ver-arrow la la-angle-right"></i></a>
 										<div
@@ -1340,10 +1382,9 @@ License: You must have a valid license purchased only from themeforest(the above
 									</li>
 									<li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"
 										m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="javascript:;"
-										data-toggle="tab" id="postNav" data-toggle="tab" role="tab"
-										class="m-menu__link m-menu__toggle"
-										aria-controls="systemManagment" aria-selected="false"><span
-												class="m-menu__link-text">POST</span><i
+											data-toggle="tab" id="postNav" data-toggle="tab" role="tab"
+											class="m-menu__link m-menu__toggle" aria-controls="systemManagment"
+											aria-selected="false"><span class="m-menu__link-text">POST</span><i
 												class="m-menu__hor-arrow la la-angle-down"></i><i
 												class="m-menu__ver-arrow la la-angle-right"></i></a>
 										<div
@@ -1371,10 +1412,9 @@ License: You must have a valid license purchased only from themeforest(the above
 									</li>
 									<li class="m-menu__item  m-menu__item--submenu m-menu__item--tabs"
 										m-menu-submenu-toggle="tab" aria-haspopup="true"><a href="javascript:;"
-										data-toggle="tab" id="SettingsNav" data-toggle="tab" role="tab"
-										class="m-menu__link m-menu__toggle"
-										aria-controls="systemManagment" aria-selected="false"><span
-												class="m-menu__link-text">Settings</span><i
+											data-toggle="tab" id="SettingsNav" data-toggle="tab" role="tab"
+											class="m-menu__link m-menu__toggle" aria-controls="systemManagment"
+											aria-selected="false"><span class="m-menu__link-text">Settings</span><i
 												class="m-menu__hor-arrow la la-angle-down"></i><i
 												class="m-menu__ver-arrow la la-angle-right"></i></a>
 										<div
@@ -1876,7 +1916,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<div class="m-widget_head">
 											<div class="m-widget_head-owlcarousel-items owl-carousel">
 												<div class="m-widget_head-owlcarousel-item carousel">
-													<span>KeenThemes</span><span>Admin Themes</span></div>
+													<span>New Solutions</span><span>Admin Themes</span></div>
 												<div class="m-widget_head-owlcarousel-item carousel"><span>Creek
 														State</span><span>WP Experts</span></div>
 												<div class="m-widget_head-owlcarousel-item carousel">
@@ -3611,8 +3651,8 @@ License: You must have a valid license purchased only from themeforest(the above
 				</div>
 			</div>
 			<!---------------------->
-			<div class="m-portlet m-portlet--mobile tab-pane  m-wrapper fade" id="systemManagment"
-			role="tabpanel" aria-labelledby="systemManagmentNav">
+			<div class="m-portlet m-portlet--mobile tab-pane  m-wrapper fade" id="systemManagment" role="tabpanel"
+				aria-labelledby="systemManagmentNav">
 				<div class="m-portlet__head">
 					<div class="m-portlet__head-caption">
 						<div class="m-portlet__head-title">
@@ -3624,8 +3664,8 @@ License: You must have a valid license purchased only from themeforest(the above
 					<div class="m-portlet__head-tools">
 						<ul class="m-portlet__nav">
 							<li class="m-portlet__nav-item">
-								<a href="#" data-toggle="modal" data-target="#addAccountModal"
-									class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air">
+								<a href="#" 
+									class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air newAccounBtn">
 									<span>
 										<i class="fa fa-plus"></i>
 										<span>New Account</span>
@@ -3636,6 +3676,58 @@ License: You must have a valid license purchased only from themeforest(the above
 
 						</ul>
 					</div>
+				</div>
+				<div class="addNewAccountForm" style="display: none;">
+					<form class="m-form m-form--fit m-form--label-align-right">
+						<div class="m-portlet__body">
+							<div class="form-group m-form__group">
+								<label for="accountName">Name</label>
+								<input type="text" class="form-control m-input" id="accountName" aria-describedby=""
+									placeholder="Enter Your Name">
+							</div>
+							<div class="form-group m-form__group">
+								<label for="accountUserName">user Name</label>
+								<input type="text" class="form-control m-input" id="accountUserName" aria-describedby=""
+									placeholder="Enter Your Name">
+							</div>
+							<div class="form-group m-form__group">
+								<label for="accountEmail">Email address</label>
+								<input type="email" class="form-control m-input" id="accountEmail"
+									aria-describedby="emailHelp" placeholder="Enter email">
+
+							</div>
+							<div class="form-group m-form__group">
+								<label for="accountPassword">Password</label>
+								<input type="password" class="form-control m-input" id="accountPassword"
+									placeholder="Password">
+							</div>
+
+							<div class="form-group m-form__group">
+								<label for="exampleSelect1">Select Type</label>
+								<select class="form-control m-input" id="exampleSelect1">
+									<option>Super Admin</option>
+									<option>Admin</option>
+
+								</select>
+							</div>
+							<div class="form-group m-form__group">
+								<label for="exampleSelect2">Select level</label>
+								<select class="form-control m-input" id="exampleSelect2">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+								</select>
+							</div>
+
+						</div>
+						<div class="m-portlet__foot m-portlet__foot--fit">
+							<div class="m-form__actions">
+								<button type="reset" class="btn btn-primary">Submit</button>
+								<button type="reset" class="btn btn-secondary">Cancel</button>
+							</div>
+						</div>
+					</form>
 				</div>
 				<div class="m-portlet__body">
 
@@ -3863,6 +3955,245 @@ License: You must have a valid license purchased only from themeforest(the above
 					</table>
 				</div>
 			</div>
+			<div class="m-portlet m-portlet--mobile tab-pane  m-wrapper fade" id="users" role="tabpanel"
+				aria-labelledby="UsersNav">
+				<div class="m-portlet__head">
+					<div class="m-portlet__head-caption">
+						<div class="m-portlet__head-title">
+							<h3 class="m-portlet__head-text">
+								Export Tools
+							</h3>
+						</div>
+					</div>
+					<div class="m-portlet__head-tools">
+						<ul class="m-portlet__nav">
+							<li class="m-portlet__nav-item">
+								<a href="#"
+									class="btn btn-primary m-btn m-btn--custom m-btn--icon m-btn--air newUserBtn">
+									<span>
+										<i class="fa fa-plus"></i>
+										<span>New Account</span>
+									</span>
+								</a>
+							</li>
+							<li class="m-portlet__nav-item"></li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="addNewUserForm" style="display: none;">
+					<form class="m-form m-form--fit m-form--label-align-right">
+						<div class="m-portlet__body">
+							<div class="form-group m-form__group">
+								<label for="accountName">Name</label>
+								<input type="text" class="form-control m-input" id="accountName" aria-describedby=""
+									placeholder="Enter Your Name">
+							</div>
+							<div class="form-group m-form__group">
+								<label for="accountUserName">user Name</label>
+								<input type="text" class="form-control m-input" id="accountUserName" aria-describedby=""
+									placeholder="Enter Your Name">
+							</div>
+							<div class="form-group m-form__group">
+								<label for="accountEmail">Email address</label>
+								<input type="email" class="form-control m-input" id="accountEmail"
+									aria-describedby="emailHelp" placeholder="Enter email">
+
+							</div>
+							<div class="form-group m-form__group">
+								<label for="accountPassword">Password</label>
+								<input type="password" class="form-control m-input" id="accountPassword"
+									placeholder="Password">
+							</div>
+
+							<div class="form-group m-form__group">
+								<label for="exampleSelect1">Select Type</label>
+								<select class="form-control m-input" id="exampleSelect1">
+									<option>Super Admin</option>
+									<option>Admin</option>
+
+								</select>
+							</div>
+							<div class="form-group m-form__group">
+								<label for="exampleSelect2">Select level</label>
+								<select class="form-control m-input" id="exampleSelect2">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+								</select>
+							</div>
+
+						</div>
+						<div class="m-portlet__foot m-portlet__foot--fit">
+							<div class="m-form__actions">
+								<button type="reset" class="btn btn-primary">Submit</button>
+								<button type="reset" class="btn btn-secondary">Cancel</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="m-portlet__body">
+
+					<!--begin: Datatable -->
+					<table class="table table-striped- table-bordered table-hover table-checkable" id="m_table_1">
+						<thead>
+							<tr>
+								<th>name</th>
+								<th>mobile</th>
+								<th>Email</th>
+								<th>Avatar</th>
+								<th>Status</th>
+								<th>league Creator</th>
+								<th>action</th>
+							</tr>
+						</thead>
+						<tbody>
+
+							<tr>
+								<td>john</td>
+								<td>05985586585</td>
+								<td>sss@gmail.com</td>
+								<td>
+									<div class="userAvatar"><img src="assets/img/1.jpg"
+											style="width:100px;border-radius: 50%;" alt=""></div>
+								</td>
+								<td><span class="m-badge m-badge--danger m-badge--wide">deactive</span>
+								</td>
+								<td><i class=" text-success fa fa-check"></td>
+								<td><i class=" fa fa-edit" data-toggle="tooltip " data-placement="bottom"
+										title="view"></i>
+
+									<i class="fa fa-times-circle" data-placement="bottom" title="delete"></i>
+									<i class="fa fa-circle text-success" data-placement="bottom" title="active"></i>
+									<i class="fa fa-circle text-danger" data-placement="bottom" title="deactive"></i>
+									<i class=" text-success fa fa-check" data-placement="bottom"
+										title="create permission">
+										<i class=" text-danger fa fa-times" data-placement="bottom"
+											title="delete permission">
+
+
+								</td>
+							</tr>
+							
+							<tr>
+								<td>john</td>
+								<td>05985586585</td>
+								<td>sss@gmail.com</td>
+								<td>
+									<div class="userAvatar"><img src="assets/img/1.jpg"
+											style="width:100px;border-radius: 50%;" alt=""></div>
+								</td>
+								<td><span class="m-badge m-badge--danger m-badge--wide">deactive</span>
+								</td>
+								<td><i class=" text-success fa fa-check"></td>
+								<td><i class=" fa fa-edit" data-toggle="tooltip " data-placement="bottom"
+										title="view"></i>
+
+									<i class="fa fa-times-circle" data-placement="bottom" title="delete"></i>
+									<i class="fa fa-circle text-success" data-placement="bottom" title="active"></i>
+									<i class="fa fa-circle text-danger" data-placement="bottom" title="deactive"></i>
+									<i class=" text-success fa fa-check" data-placement="bottom"
+										title="create permission">
+										<i class=" text-danger fa fa-times" data-placement="bottom"
+											title="delete permission">
+
+
+								</td>
+							</tr>
+							
+							<tr>
+								<td>john</td>
+								<td>05985586585</td>
+								<td>sss@gmail.com</td>
+								<td>
+									<div class="userAvatar"><img src="assets/img/1.jpg"
+											style="width:100px;border-radius: 50%;" alt=""></div>
+								</td>
+								<td><span class="m-badge m-badge--danger m-badge--wide">deactive</span>
+								</td>
+								<td><i class=" text-success fa fa-check"></td>
+								<td><i class=" fa fa-edit" data-toggle="tooltip " data-placement="bottom"
+										title="view"></i>
+
+									<i class="fa fa-times-circle" data-placement="bottom" title="delete"></i>
+									<i class="fa fa-circle text-success" data-placement="bottom" title="active"></i>
+									<i class="fa fa-circle text-danger" data-placement="bottom" title="deactive"></i>
+									<i class=" text-success fa fa-check" data-placement="bottom"
+										title="create permission">
+										<i class=" text-danger fa fa-times" data-placement="bottom"
+											title="delete permission">
+
+
+								</td>
+							</tr>
+							
+							<tr>
+								<td>john</td>
+								<td>05985586585</td>
+								<td>sss@gmail.com</td>
+								<td>
+									<div class="userAvatar"><img src="assets/img/1.jpg"
+											style="width:100px;border-radius: 50%;" alt=""></div>
+								</td>
+								<td><span class="m-badge m-badge--danger m-badge--wide">deactive</span>
+								</td>
+								<td><i class=" text-success fa fa-check"></td>
+								<td><i class=" fa fa-edit" data-toggle="tooltip " data-placement="bottom"
+										title="view"></i>
+
+									<i class="fa fa-times-circle" data-placement="bottom" title="delete"></i>
+									<i class="fa fa-circle text-success" data-placement="bottom" title="active"></i>
+									<i class="fa fa-circle text-danger" data-placement="bottom" title="deactive"></i>
+									<i class=" text-success fa fa-check" data-placement="bottom"
+										title="create permission">
+										<i class=" text-danger fa fa-times" data-placement="bottom"
+											title="delete permission">
+
+
+								</td>
+							</tr>
+							
+							<tr>
+								<td>john</td>
+								<td>05985586585</td>
+								<td>sss@gmail.com</td>
+								<td>
+									<div class="userAvatar"><img src="assets/img/1.jpg"
+											style="width:100px;border-radius: 50%;" alt=""></div>
+								</td>
+								<td><span class="m-badge m-badge--danger m-badge--wide">deactive</span>
+								</td>
+								<td><i class=" text-success fa fa-check"></td>
+								<td><i class=" fa fa-edit" data-toggle="tooltip " data-placement="bottom"
+										title="view"></i>
+
+									<i class="fa fa-times-circle" data-placement="bottom" title="delete"></i>
+									<i class="fa fa-circle text-success" data-placement="bottom" title="active"></i>
+									<i class="fa fa-circle text-danger" data-placement="bottom" title="deactive"></i>
+									<i class=" text-success fa fa-check" data-placement="bottom"
+										title="create permission">
+										<i class=" text-danger fa fa-times" data-placement="bottom"
+											title="delete permission">
+
+
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th>ID</th>
+								<th>name</th>
+								<th>email</th>
+								<th>type</th>
+								<th>level</th>
+								<th>Status</th>
+								<th>actions</th>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
 			<!---------------------------------------------------->
 		</div>
 		<!-- end::Body -->
@@ -3873,8 +4204,8 @@ License: You must have a valid license purchased only from themeforest(the above
 					<div class="m-stack m-stack--flex-tablet-and-mobile m-stack--ver m-stack--desktop">
 						<div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--last">
 							<span class="m-footer__copyright">
-								2017 &copy; Metronic theme by <a href="https://keenthemes.com"
-									class="m-link">Keenthemes</a>
+								2017 &copy; Metronic theme by <a
+									class="m-link">New Solutions</a>
 							</span>
 						</div>
 						<div class="m-stack__item m-stack__item--right m-stack__item--middle m-stack__item--first">
@@ -4407,71 +4738,6 @@ License: You must have a valid license purchased only from themeforest(the above
 	<!-- begin::Quick Nav -->
 
 
-	<div class="modal fade" id="addAccountModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<form class="m-form m-form--fit m-form--label-align-right">
-					<div class="m-portlet__body">
-						<div class="form-group m-form__group">
-							<label for="exampleInputEmail1">Name</label>
-							<input type="text" class="form-control m-input" id="" aria-describedby=""
-								placeholder="Enter Your Name">
-						</div>
-						<div class="form-group m-form__group">
-							<label for="exampleInputEmail1">user Name</label>
-							<input type="text" class="form-control m-input" id="" aria-describedby=""
-								placeholder="Enter Your Name">
-						</div>
-						<div class="form-group m-form__group">
-							<label for="exampleInputEmail1">Email address</label>
-							<input type="email" class="form-control m-input" id="exampleInputEmail1"
-								aria-describedby="emailHelp" placeholder="Enter email">
-							<span class="m-form__help">We'll never share your email with anyone else.</span>
-						</div>
-						<div class="form-group m-form__group">
-							<label for="exampleInputPassword1">Password</label>
-							<input type="password" class="form-control m-input" id="exampleInputPassword1"
-								placeholder="Password">
-						</div>
-
-						<div class="form-group m-form__group">
-							<label for="exampleSelect1">Select Type</label>
-							<select class="form-control m-input" id="exampleSelect1">
-								<option>Super Admin</option>
-								<option>Admin</option>
-
-							</select>
-						</div>
-						<div class="form-group m-form__group">
-							<label for="exampleSelect1">Select level</label>
-							<select class="form-control m-input" id="exampleSelect1">
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-							</select>
-						</div>
-
-					</div>
-					<div class="m-portlet__foot m-portlet__foot--fit">
-						<div class="m-form__actions">
-							<button type="reset" class="btn btn-primary">Submit</button>
-							<button type="reset" class="btn btn-secondary">Cancel</button>
-						</div>
-					</div>
-				</form>
-
-			</div>
-		</div>
-	</div>
-
 	<!--begin::Global Theme Bundle -->
 	<script src="assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
 	<script src="assets/demo/demo8/base/scripts.bundle.js" type="text/javascript"></script>
@@ -4488,7 +4754,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 	<!--begin::Page Scripts -->
 	<script src="assets/app/js/dashboard.js" type="text/javascript"></script>
-
+	<script src="assets/app/js/customjs.js" type="text/javascript"></script>
 	<!--end::Page Scripts -->
 
 	<!-- begin::Page Loader -->

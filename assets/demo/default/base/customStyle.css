@@ -1,3 +1,6 @@
 .fa-times-circle:hover{
     background-color:red;
 }
+.userAvatar{
+    width:100px;
+}
