@@ -8,4 +8,8 @@ $(document).ready(function () {
       $(".newUserBtn").click(function(){
         $(".addNewUserForm").slideDown(1000);
       });
+      $(".closeForm").click(function(){
+        $(".addNewUserForm").slideUp(1000);
+        $(".addNewAccountForm").slideUp(1000);
+      })
 });
